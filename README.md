@@ -1,4 +1,4 @@
-# Graylog_Content_Pack_VMWare-8.X-for VCSA/ESXI
+# Graylog Content Pack for VMWare 8.X (VCSA and ESXI)
 
 Tested with VMWARE vSphere 8.0.2 and ESXI 8.0.0 and Graylog 5.1.4. Should work with all Stormshield 4.X version.
 
