@@ -1,7 +1,5 @@
 # Graylog Content Pack for VMWare 8.X (VCSA and ESXI)
 
-# ONLY VCENTER CONTENT PACK IS AVAILABLE FOR NOW - ESXI AVAILABLE SOON
-
 This content Pack is only intended for Security Monitoring.
 If you noticed some data about security that is not parsed, you can open an issue and I will update the Content Pack.
 
@@ -15,14 +13,13 @@ The Content Pack should be compatible with all Graylog 5.X version.
 
 
 
-## Includes
+## Includes (ESXI & VCSA)
 
 * 1 Input (Syslog/TCP/1515 for VCSA)  
 * 1 Streams (VCSA)
 * Pipeline Rule w/ Stages (Extract key/values pipeline function)
 * Dashboards (24h) (VCSA ComponentS) + VCenter (SSO Activities / VM Activities)
 
-## INCLUDES SOON AVAILABLE 
 * 1 Input (Syslog/TCP/1514 for ESXI)
 * 1 Stream (ESXI)
 *  Pipeline Rule w/ Stages (Extract key/values pipeline function)
@@ -55,8 +52,19 @@ Go to Syslog > Edit
 
 ## ESXI Syslog configuration
 
-Available soon
+- Access ESXI Web:
+  
+https://your_esxi_ip/ui/#/host/manage/system/advanced-settings
 
+Select your esxi > Manage > System > Advanced Settings > On the top right, filter with syslog > Click on the line Syslog.global.logHost and Edit it:
+
+```
+tcp://192.168.1.51:1514?formatter=RFC_5424
+```
+
+<img width="917" alt="image" src="https://github.com/s0p4L1n3/Graylog_Content_Pack_VMWare-8.X-forVCSA-ESXI/assets/126569468/a54ae45d-6f6b-4f8b-a112-35ba2f44ab6d">
+
+YOU NEED TO CHOSE RFC_5424, not the default one.
 
 ## Screenshots
 
