@@ -1,6 +1,7 @@
 # Graylog Content Pack for VMWare 8.X (VCSA and ESXI)
 
-This content Pack is only intended for Security Monitoring.
+**This content Pack is only intended for Security Monitoring.**
+
 If you noticed some data about security that is not parsed, you can open an issue and I will update the Content Pack.
 
 Tested with VMWARE vSphere 8.0.2 and ESXI 8.0.0 and Graylog 5.2.0. Should work with all Stormshield 4.X version.
@@ -8,9 +9,6 @@ Tested with VMWARE vSphere 8.0.2 and ESXI 8.0.0 and Graylog 5.2.0. Should work w
 The Content Pack should be compatible with all Graylog 5.X version.
 
 **Note this was built without extractors, only pipeline rules.**
-
-
-
 
 
 ## Includes (ESXI & VCSA)
@@ -37,7 +35,8 @@ The Content Pack should be compatible with all Graylog 5.X version.
 Go to System > Content Pack > Upload (Drag and drop file or Select)
 Then click install, 
 
-I recommend you to create a specific Indice for VCSA, and apply the VCSA Stream to it.
+I recommend you to create a specific Indice for VCSA and one for ESXI, and apply the VCSA/ESXI Stream to it.
+
 
 
 ## VCSA Syslog configuration
@@ -75,6 +74,13 @@ YOU NEED TO CHOSE RFC_5424, not the default one.
 <img width="1867" alt="VCENTER_SSO_Activities" src="https://github.com/s0p4L1n3/Graylog_Content_Pack_VMWare-8.X-forVCSA-ESXI/assets/126569468/f66cf389-c4c9-44e8-876e-1589762831fa">
 
 <img width="1871" alt="VCENTER_Virtual_machine_activities" src="https://github.com/s0p4L1n3/Graylog_Content_Pack_VMWare-8.X-forVCSA-ESXI/assets/126569468/a88a0cc3-833c-446c-b13f-a181904d8f44">
+
+- ESXI Dashboards
+
+<img width="1876" alt="image" src="https://github.com/s0p4L1n3/Graylog_Content_Pack_VMWare-8.X-forVCSA-ESXI/assets/126569468/cea6910e-4a25-4665-aec7-f35c2aa3e0c0">
+
+<img width="1879" alt="image" src="https://github.com/s0p4L1n3/Graylog_Content_Pack_VMWare-8.X-forVCSA-ESXI/assets/126569468/89800861-bd86-4c8c-9f01-331504b01e55">
+
 
 ## Known ISSUE
 
