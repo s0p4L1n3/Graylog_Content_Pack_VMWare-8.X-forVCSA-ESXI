@@ -29,7 +29,10 @@ The Content Pack should be compatible with all Graylog 5.X version.
 * VCSA configured to send logs
 * ESXI configured to send log
 * Open port 1514+1515 for TCP on the graylog host and/or docker compose file
- 
+* Download  [this CSV file (RFC_log_level.csv)](https://github.com/s0p4L1n3/Graylog_Content_Pack_VMWare-8.X-forVCSA-ESXI/files/14021864/RFC_log_level.csv)
+ for Lookup Table and place it on your graylog servers (if different than /srv , edit the Data adapter from System > Lookup Table > Data Adapter to change the path)
+
+
 ## Install the content pack
 
 Go to System > Content Pack > Upload (Drag and drop file or Select)
