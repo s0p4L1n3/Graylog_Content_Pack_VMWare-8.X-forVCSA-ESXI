@@ -4,7 +4,7 @@
 
 If you noticed some data about security that is not parsed, you can open an issue and I will update the Content Pack.
 
-Tested with VMWARE vSphere 8.0.2 and ESXI 8.0.0 and Graylog 5.2.0. Should work with all Stormshield 4.X version.
+Tested with VMWARE vSphere 8.0.2 and ESXI 8.0.0 and Graylog 5.2.0.
 
 The Content Pack should be compatible with all Graylog 5.X version.
 
