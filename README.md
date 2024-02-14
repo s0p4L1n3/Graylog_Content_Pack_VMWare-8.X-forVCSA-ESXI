@@ -33,7 +33,9 @@ The Content Pack should be compatible with all Graylog 5.X version.
  for Lookup Table and place it on your graylog servers (if different than /srv , edit the Data adapter from System > Lookup Table > Data Adapter to change the path)
 * Before installing the content pack you need to replace all source-entries in json file with the names, using wildcards, of the esxi servers.
   * VMWARE-VCenter-Content-Pack-Security-Events.json: replace `source:vcsa` with `source:your_vcsa_dns_name` (check the raw logs of the VCSA input if you are not sure)
-  * ESXI-Content-Pack-Security-Events.json: replace `source:esxi*.lab.lan` with `source:your_esxis_hostname*.domain_name`
+  * ESXI-Content-Pack-Security-Events.json:
+    * replace `source:esxi*.lab.lan` with `source:your_esxis_hostname*.domain_name`
+    * replace `esxi[0-9]\\.lab\\.lan` with `esxi[0-9]\\.your\\.domain`
 
 
 ## Install the content pack
