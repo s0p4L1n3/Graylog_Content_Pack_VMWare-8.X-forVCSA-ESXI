@@ -101,7 +101,7 @@
             },
             "value": {
               "@type": "string",
-              "@value": "esxi[0-9]\\.iss\\.lan"
+              "@value": "esxi[0-9]\\.lab\\.lan"
             },
             "inverted": {
               "@type": "boolean",
